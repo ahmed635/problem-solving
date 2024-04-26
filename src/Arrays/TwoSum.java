@@ -45,6 +45,6 @@ public class TwoSum {
                 return new int[]{i, map.get(x)};
             map.put(current, i);
         }
-        return nums;
+        return null;
     }
 }
