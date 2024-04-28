@@ -6,6 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
+    /*
+     * Given an array and target
+     * Return the index of the two numbers that equals to target
+     * */
+
     public static void main(String[] args) {
         int[] nums = new int[] {3, 3};
         int target = 6;
