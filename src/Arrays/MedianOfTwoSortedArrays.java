@@ -1,5 +1,5 @@
 package Arrays;
-import	java.util.Arrays;
+import java.util.Arrays;
 
 public class MedianOfTwoSortedArrays
 {
@@ -50,5 +50,44 @@ public class MedianOfTwoSortedArrays
 		System.arraycopy(arr1,0 , mergedArray, 0, arr1.length);
 		System.arraycopy(arr2, 0, mergedArray, arr1.length, arr2.length);
 		return mergedArray;
+	}
+
+	/*
+	 * this is optimized solution to approve time complexity: O(m+n)
+	 * */
+	private static double optimizedSolution(int[] nums1, int[] nums2)
+	{
+		int m = nums1.length;
+		int n = nums2.length;
+
+		if ((m + n) % 2 == 0)
+		{
+			for (int i = 0; i < (m + n); i++)
+			{
+				int temp = getMin(nums1, nums2);
+			}
+			return (double) (getMin(nums1, nums2) + getMin(nums1, nums2));
+		}
+		else
+		{
+			for (int i = 0; i < (m + n); i++)
+			{
+				int temp = getMin(nums1, nums2);
+			}
+			return getMin(nums1, nums2);
+		}
+	}
+
+	private static int getMin(int[] nums1, int[] nums2)
+	{
+		int p1 = 0;
+		int p2 = 0;
+		if (p1 < nums1.length && p2 < nums2.length)
+			return Math.min(nums1[p1], nums2[p2]);
+		else if (p2 < nums2.length)
+			return nums2[p2++];
+		else if (p1 < nums1.length)
+			return nums1[p1++];
+		return -1;
 	}
 }
