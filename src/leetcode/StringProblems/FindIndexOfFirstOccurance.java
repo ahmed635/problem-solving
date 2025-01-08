@@ -1,4 +1,4 @@
-package StringProblems;
+package leetcode.StringProblems;
 
 public class FindIndexOfFirstOccurance
 {
