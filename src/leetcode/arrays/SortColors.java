@@ -1,4 +1,4 @@
-package ArraysProblems;
+package leetcode.arrays;
 
 import java.util.Arrays;
 

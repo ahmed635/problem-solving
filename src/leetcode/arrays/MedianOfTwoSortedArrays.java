@@ -1,11 +1,11 @@
-package ArraysProblems;
+package leetcode.arrays;
 import java.util.Arrays;
 
 public class MedianOfTwoSortedArrays
 {
 	/*
-	 * Given two sorted arrays num1 and num2 of size m and n respectively
-	 * Return the median of the two sorted arrays
+	 * Given two sorted leetcode.arrays num1 and num2 of size m and n respectively
+	 * Return the median of the two sorted leetcode.arrays
 	 * Time complexity should be O(log(m+n))
 	 * */
 
