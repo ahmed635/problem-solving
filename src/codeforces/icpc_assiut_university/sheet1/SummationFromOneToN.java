@@ -17,10 +17,7 @@ public class SummationFromOneToN
 	{
 		Scanner sc = new Scanner(System.in);
 		long number = sc.nextLong();
-		long sum = 0;
-		for(int i=1; i<=number; i++){
-			sum += i;
-		}
+		long sum = number * (number + 1) / 2;
 		System.out.println(sum);
 	}
 }
