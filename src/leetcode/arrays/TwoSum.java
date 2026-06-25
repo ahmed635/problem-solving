@@ -1,8 +1,6 @@
 package leetcode.arrays;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class TwoSum {
     /*
@@ -11,12 +9,12 @@ public class TwoSum {
      * */
 
     public static void main(String[] args) {
-        int[] nums = new int[] {3, 3};
+        int[] nums = new int[] { 1, 3, 5, 3 };
         int target = 6;
         int[] result = new int[2];
 
         System.out.println(Arrays.toString(nums));
-        result = twoSum(nums, target);
+        result = optimzeTimeAndSpace(nums, target);
 
         System.out.println(Arrays.toString(result));
     }

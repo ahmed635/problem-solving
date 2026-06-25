@@ -24,6 +24,6 @@ public class Player
 	@Override
 	public String toString()
 	{
-		return STR."Player{number=\{number}, name='\{name}\{'\''}\{'}'}";
+		return "Player{number=" + number + ", name='" + name + '\'' + '}';
 	}
 }
